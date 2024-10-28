@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignmemt</title>
+  </head>
+  <body>
+    <div class="main">
+      <fieldset class="PersonalInfo">
+        <legend>Personal Information</legend>
+        <form
+          action="action.php"
+          method="post"
+          enctype="multipart/form-data"
+        >
+    <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" maxlength="52" required autocomplete="name" autofocus>
+        <label for="fname">Father Name</label>
+        <input type="text" name="fname"  placeholder="Enter Father Name " maxlength="52" required autocomplete="name" >
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="example@gmail.com" required autocomplete="email" >
+            <label for="pass">Password</label>
+            <input type="password" name="pass " id="pass" required autocomplete="current-password">
+        </div>
+        <div>
+                <label for="date">Date of Birth</label>
+                <input type="date" id="date" name="date" required>
+                <label for="age">Age </label>
+                <input type="number" name="age" min="18" max="100" required>
+        </div>
+        </form>
+      </fieldset>
+      <fieldset class="Preferences">
+        <legend>Preferences</legend>
+        <div>
+            <p>Gender : </p>
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" value="Male" >
+            <label for="gender">Female</label>
+            <input type="radio" name="gender" value="Female" >
+            <label for="gender">Other</label>
+            <input type="radio" name="gender" value="Other" >
+
+        </div>
+        <div class="hobbies">
+            <p>Hobbies : </p>
+            <label for="Books Reading"><input type="checkbox" name="Books Reading" id="hobbies">Books Reading</label>
+            <label for="Music "><input type="checkbox" name="Music " id="hobbies">Music</label>
+            <label for="Jogging"><input type="checkbox" name="Jogging" id="hobbies">Jogging</label>
+        </div>
+        <div class="country">
+            <p>country : </p>
+             <select name="country" id="country">
+                <option value="">Select your country</option>
+                <option value="pak"> Pakistan</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="au">Australia</option>
+             </select>
+        </div>
+      </fieldset>
+
+
+    </div>
+  </body>
+</html>
