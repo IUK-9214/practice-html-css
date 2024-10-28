@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignmemt</title>
+    <link rel="stylesheet" href="assignmemnt .css">
   </head>
   <body>
     <div class="main">
@@ -15,9 +16,10 @@
           enctype="multipart/form-data"
         >
     <label for="name">Name</label>
-        <input type="text" name="name" id="name" placeholder="Enter your name" maxlength="52" required autocomplete="name" autofocus>
+       <div> <input type="text" name="name" id="name" placeholder="Enter your name" maxlength="52" required autocomplete="name" autofocus>
         <label for="fname">Father Name</label>
         <input type="text" name="fname"  placeholder="Enter Father Name " maxlength="52" required autocomplete="name" >
+      </div>
         <div>
             <label for="email">Email</label>
             <input type="email" name="email" placeholder="example@gmail.com" required autocomplete="email" >
@@ -30,7 +32,7 @@
                 <label for="age">Age </label>
                 <input type="number" name="age" min="18" max="100" required>
         </div>
-        </form>
+        
       </fieldset>
       <fieldset class="Preferences">
         <legend>Preferences</legend>
@@ -52,7 +54,7 @@
         </div>
         <div class="country">
             <p>country : </p>
-             <select name="country" id="country">
+             <select name="country" id="country" style="width: 40vw;">
                 <option value="">Select your country</option>
                 <option value="pak"> Pakistan</option>
                 <option value="us">United States</option>
@@ -62,8 +64,16 @@
              </select>
         </div>
       </fieldset>
-
-
+      <fieldset class="feedback ">
+        <legend>Feedback</legend>
+        <div class="feedback">
+          <label for="feedback">Your Feedback : </label>
+          <textarea name="feedback" id="fb" cols="50" rows="5" placeholder="write your feedback here...."></textarea>
+        </div>
+      </fieldset>
+      <input type="hidden" name="UserId" value="12345">
+      <button type="submit">Submit</button>
+    </form>
     </div>
   </body>
 </html>
